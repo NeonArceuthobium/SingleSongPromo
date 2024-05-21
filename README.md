@@ -1,6 +1,6 @@
-# Single Song Promotion
+# Welcome to the Internet, Bo Burnham
 
-> Playlists more popular than albums 
+> It was always the plan to put the world in your hand.
 
 ## What is this? 
 * A website to promote a single-song
@@ -13,4 +13,4 @@
 * What's old is new agai. This is the [modern mixtape](https://en.wikipedia.org/wiki/Mixtape) or a compilation of curated songs. 
 
 ## Citations
-* Your citations go here
+* [Welcome to the internet, Bo Burnham] (https://www.youtube.com/watch?v=k1BneeJTDcU)
