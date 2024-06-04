@@ -1,10 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&display=swap');
 /* CSS Variables */
 :root {
-
-    --primaryfont:  "Press Start 2P", system-ui;
-
     /* main UI color */
     --plyr-color-main: rgb(0, 255, 47);
     /* audio controls background */
@@ -24,6 +23,12 @@
     --plyr-tooltip-color: black; 
     --plyr-control-icon-size: 16px;
     --backgroundcolor: darkmagenta;
+
+    --visited-links: skyblue;
+    --hover-links: royalblue;
+    --headercolor: royalblue;
+    --primaryfont:  "Press Start 2P", system-ui;
+    --secondaryfont: "Glegoo", serif;
 }
 
 body {
@@ -38,49 +43,67 @@ main {
     background: darkslateblue;
 }
 
-main img {
-    /* Fit image to container */
-    max-width: 100%;
-    display: block;
-}
 
 /* Primary Content */
 article {
     /* flow content horizontally */
     display: flex;
-    flex-direction: row;
-
+/*     flex-direction: row; */
+  flex-wrap: wrap;
     gap: 1em;
     justify-content: center;
-}
 
-article verse{
-    /* keep flex'd child same width */
-    flex: 1;
 }
 
 h1 {
 font-family: var(--primaryfont);
-color: var(--plyr-color-main);
+color: var(--headercolor);
+  padding-left: 50px;
+  padding-top: 50px;
 }
 h2{
     font-family: var(--primaryfont);
-    color: var(--backgroundcolor);
+    color: var(--headercolor);
+  padding-left: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 h3{
-
     font-family: var(--primaryfont);
-    color: var(--backgroundcolor);
-}
-verse {
-    flex-wrap: wrap;
-    
+    color: var(--plyr-color-main);
 }
 
+
+
+
+
+section{
+  margin: 50px;
+  border: ridge 10px var(--plyr-color-main);
+  padding: 50px;
+  max-width: 20em;
+}
+
+p{
+  color: var(--plyr-color-main);
+  font-family: var(--secondaryfont)
+}
 
 /* Footer */
 footer {
-    text-align: center;
+  text-align: center;
+  font-family: var(--primaryfont);
+}
+footer a {
+  color: var(--plyr-color-main); /* Default link color */
+}
+
+footer a:visited {
+    color: var(--visited-links); /* Color after the link has been visited */
+}
+
+footer a:hover {
+    color: var(--hover-links); /* Color when the mouse hovers over the link */
 }
 
 /* Media Queries */
