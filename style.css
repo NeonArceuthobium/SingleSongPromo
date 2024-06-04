@@ -1,11 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 /* CSS Variables */
 :root {
+
+    --primaryfont:  "Press Start 2P", system-ui;
+
     /* main UI color */
-    --plyr-color-main: darkgray;
+    --plyr-color-main: rgb(0, 255, 47);
     /* audio controls background */
-    --plyr-audio-controls-background: black;
+    --plyr-audio-controls-background: darkslateblue;
     /* audio controls color */
-    --plyr-audio-control-color: white;
+    --plyr-audio-control-color: rgb(0, 255, 47);
     /* font family for player */
     --plyr-font-family: sans-serif;
     /* font size of player  */
@@ -14,14 +19,15 @@
     /* Other optional customiziations */
     --plyr-audio-control-color-hover:  black;
     --plyr-audio-progress-buffered-background:  black;
-    --plyr-audio-range-track-background: white;
-    --plyr-tooltip-background: white;
+    --plyr-audio-range-track-background: rgb(0, 66, 12);
+    --plyr-tooltip-background: rgb(0, 66, 12);
     --plyr-tooltip-color: black; 
     --plyr-control-icon-size: 16px;
+    --backgroundcolor: darkmagenta;
 }
 
 body {
-    background: darkmagenta;
+    background: var(--backgroundcolor);
 }
 
 /* Layout */
@@ -29,8 +35,7 @@ main {
     /* Fixed width center align */
     max-width: 60em;
     margin-inline: auto;
-
-    background: lightgray;
+    background: darkslateblue;
 }
 
 main img {
@@ -43,14 +48,35 @@ main img {
 article {
     /* flow content horizontally */
     display: flex;
+    flex-direction: row;
+
     gap: 1em;
     justify-content: center;
 }
 
-article section {
+article verse{
     /* keep flex'd child same width */
     flex: 1;
 }
+
+h1 {
+font-family: var(--primaryfont);
+color: var(--plyr-color-main);
+}
+h2{
+    font-family: var(--primaryfont);
+    color: var(--backgroundcolor);
+}
+h3{
+
+    font-family: var(--primaryfont);
+    color: var(--backgroundcolor);
+}
+verse {
+    flex-wrap: wrap;
+    
+}
+
 
 /* Footer */
 footer {
@@ -60,6 +86,6 @@ footer {
 /* Media Queries */
 @media (max-width: 40em) {
     main article {
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 }
