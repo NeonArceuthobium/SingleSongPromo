@@ -14,3 +14,4 @@
 
 ## Citations
 * [Welcome to the internet, Bo Buranham] (https://www.youtube.com/watch?v=k1BneeJTDcU)
+* [Lyrics] (https://genius.com/Bo-burnham-welcome-to-the-internet-lyrics)
